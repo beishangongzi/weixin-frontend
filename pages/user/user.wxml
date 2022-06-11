@@ -8,7 +8,7 @@
       <view class="row">
 
         <image class="avatar" wx:if="{{userInfo}}" src="{{userInfo.avatarUrl}}"></image>
-        <image class="avatar" wx:else="{{userInfo}}" src="/static/hg.jpg"></image>
+        <image class="avatar" wx:else="{{userInfo}}" src="http://139.159.252.137:8000/static/a.jpg"></image>
 
         <view class="name" wx:if="{{userInfo}}">
           <view bindtap="onClickLogout">{{userInfo.nickName}}</view>
@@ -95,7 +95,7 @@
       <image src="/static/images/icon/wechat_contact_icon_show.png"></image>
     </button>
     <button bindtap="onClickCall">
-      <image src="/static/images/icon/phone_contact_icon_show.png"></image>
+      <image src="/static/images/icon/wechat_contact_icon_show.png"></image>
     </button>
   </view>
 </view>
