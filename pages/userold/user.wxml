@@ -1,0 +1,3 @@
+<!--pages/user/user.wxml-->
+<navigator url="/pages/auth/auth" open-type="navigate"></navigator>
+<button type="primary"  bindtap="gotomessage">登录</button>

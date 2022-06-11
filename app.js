@@ -14,6 +14,24 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    baseUrl: "http://139.159.252.137:8000/v1/api/"
+  },
+  initUserInfo(res, localInfo){
+    // 初始化用户信息
+    var info = {
+      token:res.token,
+      phone: res.phone,
+      nickName: localInfo.nickName,
+      avatarUrl: localInfo.avatarUrl,
+      username: res.username
+    }
+    this.globalData.userInfo = info
+    wx.setStorageSync('userInfo', info)
+  },
+  deleteUserInfo(){
+    this.globalData.userInfo = null
+    wx.removeStorageSync('userInfo')
   }
+
 })

@@ -1,13 +1,35 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/search/search",
+    "pages/share/share",
+    "pages/user/user",
+    "pages/auth/auth"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/search/search",
+      "text": "搜索",
+      "iconPath": "/image/tabimage/搜索.png",
+      "selectedIconPath": "/image/tabimage/搜索 (1).png"
+    },
+    {
+      "pagePath": "pages/share/share",
+      "text": "分享交流",
+      "iconPath": "/image/tabimage/交流 ...png",
+      "selectedIconPath": "/image/tabimage/交流1.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "/image/tabimage/我的.png",
+      "selectedIconPath": "/image/tabimage/我的 (1).png"
+    }]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
